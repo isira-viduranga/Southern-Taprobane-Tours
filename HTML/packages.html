@@ -5,21 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Packages | Southern Taprobane Tours</title>
     <link rel="stylesheet" href="../CSS/packages.css">
+    <link rel="stylesheet" href="../CSS/header.css" />
+	<link rel="stylesheet" href="../CSS/navigationbar.css" />
+    <link rel="stylesheet" href="../CSS/responsive.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />  
 </head>
 <body>
-    <header>
-        <h1>Tour Packages</h1>
-        <nav>
-            <a href="index.html">Home</a> > <a href="packages.html">Tour Packages</a>
-        </nav>
-    </header>
-    
+    <div class="blur__overlay"></div>
+
+		<header class="header">
+			<a class="header__left" href="#">
+				<img class="header__logo" src="../MEDIA/stt.svg" alt="" />
+			</a>
+
+			<ul class="header__middle">
+			<li>
+				<li><a class="header__nav__btn" href="#">Places</a></li>
+				<li><a class="header__nav__btn" href="#">Contact Us</a></li>
+				<li><a class="header__nav__btn" href="#">Packages</a></li>
+				<li><a class="header__nav__btn" href="#">About Us</a></li>
+				<li><a class="header__nav__btn" href="#">Events</a></li>
+                <li><a class="header__nav__btn" href="#">FAQs</a></li>
+			</li>
+			</ul>
+
+			<div class="header__right">
+                <a class="header__nav__btn" href="#">Fb</a>
+				<a class="header__nav__btn" href="#">Insta</a>
+				<a class="header__nav__btn menu__btn" href="#">menu</a>
+			</div>
+		</header>
+
+		<nav class="navigation">
+			<div class="close__btn__container">
+				<img class="navigation__close__btn" src="../MEDIA/close_icon.svg" alt="Close" />
+			</div>
+
+			<ul>
+
+				<li><a class="nav__link" href="#">Package 1 </a></li>
+				<li><a class="nav__link" href="#">package 2 </a></li>
+				<li><a class="nav__link" href="#">package 3 </a></li>
+				<li><a class="nav__link" href="#">package 4 </a></li>
+				<li><a class="nav__link" href="#">Package 5 </a></li>
+			</ul>
+		</nav>
+
     <section class="intro">
         <p>Discover our wide range of tour packages, each designed to offer a unique and unforgettable experience. Whether you're looking for adventure, relaxation, or cultural immersion, we have the perfect package for you.</p>
     </section>
     
     <section class="packages">
-        <h2>Our Packages</h2>
+        <h1>Tour Packages</h1>
         
         <div class="package" id="ella-one-day">
             <h3>Ella (One Day)</h3>
@@ -72,8 +110,15 @@
         
     </section>
     
-    <footer>
-        <p>&copy; 2024 Southern Taprobane Tours. All rights reserved.</p>
-    </footer>
+        <footer class="footer">
+            <ul>
+                <li><a href="#">STT © 2024</a></li>
+                <li><a href="#"> Privacy &amp; Legal </a></li>
+                <li><a href="#"> contact </a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">locations</a></li>
+            </ul>
+        </footer>
+        <script src="../JAVASCRIPT/script.js"></script>
 </body>
 </html>
