@@ -257,6 +257,7 @@ input {
 }
 
 .nav__link:hover {
+  text-decoration: none;
   color: var(--text-color);
 }
 
@@ -998,9 +999,6 @@ input {
   .nav__link {
     color: var(--text-color);
     text-transform: initial;
-  }
-  .nav__link:hover {
-    color: var(--white-color);
   }
   .nav__dark {
     position: initial;
