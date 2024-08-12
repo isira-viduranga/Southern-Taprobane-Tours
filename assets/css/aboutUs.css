@@ -1,0 +1,79 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* variable.css */
+/* Define any CSS variables here */
+
+/* Custom styles for About Us page */
+.about-us__title {
+    text-align: center;
+    margin-top: 20px;
+    color: #007BFF;
+}
+
+.about-us__intro, 
+.about-us__story, 
+.about-us__mission-values, 
+.about-us__team, 
+.about-us__why-choose-us, 
+.about-us__testimonials, 
+.about-us__cta {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team-member__photo {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+blockquote {
+    border-left: 5px solid #007BFF;
+    margin: 20px 0;
+    padding-left: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+.about-us__cta a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
