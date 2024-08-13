@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
+  --header-height: 3.5rem;
 
   /*========== Colors ==========*/
   /* Change favorite color to match images */
@@ -177,11 +177,11 @@ input {
 
 .swiper-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  justify-content: center; /* Horizontally centers the items */
-  align-items: center; /* Vertically centers items on each line */
-  gap: 10px; /* Adds space between items */
-  padding: 20px; /* Optional: adds some padding around the container */
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 30px; 
+  padding: 20px; 
 }
 .container {
   max-width: 968px;
@@ -257,6 +257,7 @@ input {
 }
 
 .nav__link:hover {
+  text-decoration: none;
   color: var(--text-color);
 }
 
@@ -309,7 +310,7 @@ input {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: 83%;
+  object-position: 35%;
 }
 
 .home__img__places {
@@ -360,7 +361,6 @@ input {
 }
 
 .home__info {
-  background-color: var(--first-color);
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
@@ -396,6 +396,130 @@ input {
 }
 
 /*=============== BUTTONS ===============*/
+
+.button-container {
+  text-align: center;
+  position: fixed;
+}
+
+.magical-button {
+  background-color: var(--first-color);
+  border: none;
+  border-radius: 10px; /* Softer corners for a modern look */
+  padding: 10px 50px; /* Adjusted padding for a rectangular shape */
+  color: white;
+  font-size: 18px; /* Slightly smaller font size for a sleek look */
+  font-weight: 600; 
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 130;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.magical-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 150%;
+  height: 100%;
+  transform: skewX(-15deg);
+  transition: all 0.5s ease;
+}
+
+.magical-button:hover::before {
+  left: 125%;
+  transition: all 0.5s ease;
+}
+
+.magical-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), transparent); /* Soft glow */
+  opacity: 0.5;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.magical-button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.magical-button:hover {
+  background: linear-gradient(135deg, #2e7d32, #4caf50); /* Muted green gradient for hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Slightly larger shadow on hover */
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.particle-container {
+  position: absolute;
+  top: 50%;
+  left: 77.5%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #e1ffc7;
+  border-radius: 50%;
+  animation: particleAnimation 4s infinite ease-in-out;
+}
+
+.particle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.particle:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.particle:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.particle:nth-child(5) {
+  animation-delay: 4s;
+}
+
+@keyframes particleAnimation {
+  0% {
+      transform: translate(0, 0) scale(0.5);
+      opacity: 1;
+  }
+  25% {
+      transform: translate(60px, -60px) scale(1);
+      opacity: 0.8;
+  }
+  50% {
+      transform: translate(120px, 0) scale(0.7);
+      opacity: 0.6;
+  }
+  75% {
+      transform: translate(60px, 60px) scale(1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translate(0, 0) scale(0.5);
+      opacity: 1;
+  }
+}
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -875,9 +999,6 @@ input {
   .nav__link {
     color: var(--text-color);
     text-transform: initial;
-  }
-  .nav__link:hover {
-    color: var(--white-color);
   }
   .nav__dark {
     position: initial;
