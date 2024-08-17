@@ -399,6 +399,7 @@ input {
 
 .button-container {
   text-align: center;
+  z-index: 100;
   position: fixed;
 }
 
