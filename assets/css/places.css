@@ -126,9 +126,3 @@ h2 {
         max-width: 45%;
     }
 }
-
-@media screen and (max-width: 413px) { 
-    .video__container {
-        height: calc(100vh - var(--header-height));
-    }
-}
