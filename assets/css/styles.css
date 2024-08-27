@@ -1012,6 +1012,9 @@ input {
     width: 8px;
     height: 8px;
   }
+  .home__container {
+    height: calc(100vh - var(--header-height));
+  }
 }
 /* For medium devices */
 @media screen and (min-width: 568px) {
@@ -1026,6 +1029,27 @@ input {
   .subscribe__form {
     width: 470px;
     margin: 0 auto;
+  }
+  .magical-button {
+    font-size: 11px;
+    padding: 10px 40px;
+  }
+  .home__info {
+    width: 200px;
+  }
+  .particle-container {
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+  }
+  .particle {
+    width: 8px;
+    height: 8px;
+  }
+  .home__container {
+    height: calc(100vh - var(--header-height));
   }
 }
 
@@ -1215,6 +1239,15 @@ input {
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
+  body {
+    margin: 0;
+  }
+  .home__container, .home__img {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 721px) {
   body {
     margin: 0;
   }
