@@ -993,6 +993,7 @@ input {
   }
   .home__info {
     width: 200px;
+    padding: 3.5rem 1rem;
   }
   .particle-container {
     top: 50%;
@@ -1029,6 +1030,7 @@ input {
   }
   .home__info {
     width: 250px;
+    padding: 3.5rem 1rem;
   }
   .particle-container {
     top: 50%;
