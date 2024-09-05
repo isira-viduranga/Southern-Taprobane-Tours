@@ -62,7 +62,7 @@
   :root {
     --biggest-font-size: 3rem;
     --h1-font-size: 1.8rem;
-    --h2-font-size: 1.5;
+    --h2-font-size: 1.35;
     --h3-font-size: 1rem;
     --normal-font-size: 1rem;
     --small-font-size: .675rem;
@@ -74,7 +74,7 @@
   :root {
     --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
-    --h2-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
@@ -853,11 +853,11 @@ input {
 }
 
 .footer__title {
-  margin-bottom: var(--mb-0-5);
+  margin-bottom: var(--mb-1);
 }
 
 .footer__description {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-0-75);
 }
 
 .footer__social {
@@ -979,7 +979,7 @@ input {
   }
   .home__info {
     width: 200px;
-    padding: 5rem 1rem;
+    padding: 3.25rem 1rem;
   }
   .particle-container {
     top: 50%;
@@ -1041,6 +1041,9 @@ input {
   .scroll-header .change-theme {
     color: var(--text-color);
   }
+  .footer__content {
+    margin-left: 10%;
+  }
 }
 /* For medium devices */
 @media screen and (min-width: 568px) {
@@ -1062,7 +1065,7 @@ input {
   }
   .home__info {
     width: 250px;
-    padding: 5rem 1rem;
+    padding: 3.25rem 1rem;
   }
   .particle-container {
     top: 50%;
@@ -1120,6 +1123,9 @@ input {
   }
   .scroll-header .change-theme {
     color: var(--text-color);
+  }
+  .footer__content {
+    margin-left: 10%;
   }
 }
 
@@ -1244,7 +1250,12 @@ input {
   }
   .footer__rights {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+  }
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    row-gap: 2rem;
+    margin-left: 10%;
   }
 }
 
@@ -1312,9 +1323,6 @@ input {
   .place__card, .place__img {
     height: 263px;
   }
-  .footer__content {
-    justify-items: center;
-  }
   .magical-button {
     font-size: 14px;
     padding: 11px 43px;
@@ -1322,6 +1330,19 @@ input {
   .nav__logo {
     height: 45px;
     width: 90px;
+  }
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    row-gap: 2rem;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 1335px) {
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+    margin-left: 0;
   }
 }
 
