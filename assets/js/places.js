@@ -19,7 +19,7 @@ window.addEventListener('load', function() {
     var videoElement = document.getElementById('responsive-video');
 
     // Define sources for different screen sizes
-    var defaultVideoSrc = 'assets/video/videonew.mp4'; // Default video for larger screens
+    var defaultVideoSrc = 'assets/video/SL_Places_Main.mp4'; // Default video for larger screens
     var phoneVideoSrc = 'assets/video/SL2.mp4'; // Video for phones
 
     // Function to set the video source based on screen width
