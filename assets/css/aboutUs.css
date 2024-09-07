@@ -65,3 +65,153 @@
 .about-us-text ul li strong {
     color: #008080;
 }
+
+/* Media Queries for Responsive Adjustments */
+@media (min-width: 240px) {
+    .hero{
+        height: 35vh
+    }
+    .about-us-container,
+    .about-us-text {
+        max-width: 98%; /* Proportionally larger on wider screens */
+    }
+
+    .hero-content h1 {
+        font-size: 1.7em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+    .about-us-text h2 {
+        font-size: 1.2em;
+    }
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 450px) {
+    .hero{
+        height: 30vh
+    }
+    .about-us-container,
+    .about-us-text {
+        max-width: 95%; /* Proportionally larger on wider screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.3em;
+    }
+
+    .hero-content p,
+    .about-us-text h2 {
+        font-size: 1.3em;
+    }
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 720px) {
+    .hero{
+        height: 35vh
+    }
+    .about-us-container,
+    .about-us-text {
+        max-width: 95%; /* Proportionally larger on wider screens */
+    }
+
+    .hero-content h1 {
+        font-size: 3.2em;
+    }
+
+    .hero-content p,
+    .about-us-text h2,
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-us-container,
+    .about-us-text {
+        max-width: 90%; /* Proportionally larger on wider screens */
+    }
+
+    .hero-content h1 {
+        font-size: 3.5em;
+    }
+
+    .hero-content p,
+    .about-us-text h2,
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero {
+        height: 45vh
+    }
+    .about-us-container,
+    .about-us-text {
+        max-width: 95%;
+    }
+
+    .hero-content h1 {
+        font-size: 4.5em;
+    }
+
+    .hero-content p,
+    .about-us-text h2 {
+        font-size: 2.2em;
+    }
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .about-us-container,
+    .about-us-text {
+        max-width: 95%;
+    }
+
+    .hero-content h1 {
+        font-size: 6.5em;
+    }
+
+    .hero-content p,
+    .about-us-text h2 {
+        font-size: 2.8em;
+    }
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 2600px) {
+    .about-us-container,
+    .about-us-text {
+        max-width: 95%;
+    }
+
+    .hero-content h1 {
+        font-size: 7em;
+    }
+
+    .hero-content p,
+    .about-us-text h2,
+    .about-us-text p,
+    .about-us-text ul li {
+        font-size: 38px;
+    }
+}
+    
