@@ -44,7 +44,7 @@
 }
 
 .about-us-text p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -132,14 +132,17 @@
     .about-us-text h2,
     .about-us-text p,
     .about-us-text ul li {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
 
 @media (min-width: 1200px) {
+    .hero {
+        height: 45vh
+    }
     .about-us-container,
     .about-us-text {
-        max-width: 90%; /* Proportionally larger on wider screens */
+        max-width: 95%; /* Proportionally larger on wider screens */
     }
 
     .hero-content h1 {
@@ -150,7 +153,7 @@
     .about-us-text h2,
     .about-us-text p,
     .about-us-text ul li {
-        font-size: 30px;
+        font-size: 21px;
     }
 }
 
@@ -173,7 +176,7 @@
     }
     .about-us-text p,
     .about-us-text ul li {
-        font-size: 30px;
+        font-size: 26px;
     }
 }
 
@@ -193,7 +196,7 @@
     }
     .about-us-text p,
     .about-us-text ul li {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -211,7 +214,7 @@
     .about-us-text h2,
     .about-us-text p,
     .about-us-text ul li {
-        font-size: 38px;
+        font-size: 30px;
     }
 }
     
